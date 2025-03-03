@@ -2,10 +2,10 @@ const fs = require("fs");
 
 //write files
 
-//sync
+//sync...blocking
 fs.writeFileSync("./test.txt", "hello");
 
-//async
+//async....non blocking
 fs.writeFileSync("./test1.txt", "whats", (err) => {});
 
 //read files
